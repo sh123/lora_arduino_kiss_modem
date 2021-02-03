@@ -57,7 +57,6 @@ void setup() {
   LoRa.setPins(CFG_LORA_PIN_SS, CFG_LORA_PIN_RST, CFG_LORA_PIN_DIO0);
   
   while (!LoRa.begin(CFG_LORA_FREQ)) {
-    Serial.print(".");
     delay(CONN_RETRY_SLEEP_MS);
   }
   LoRa.setSyncWord(CFG_LORA_SYNC_WORD);
