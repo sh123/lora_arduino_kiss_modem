@@ -45,7 +45,6 @@ enum KissCmd {
 KissState kissState_;
 KissCmd kissCmd_;
 
-// not used
 byte csmaP_ = DEFAULT_P;
 long csmaSlotTime_ = DEFAULT_SLOT_TIME;
 long csmaSlotTimePrev_ = 0;
