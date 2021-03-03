@@ -78,8 +78,8 @@ void loop() {
       if (Serial.available()) {
         onSerialDataAvailable();
       }
+      csmaSlotTimePrev_ = currentTime;
     }
-    csmaSlotTimePrev_ = currentTime;
   }
   delay(LOOP_SLEEP_MS);
 }
